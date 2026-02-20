@@ -12,7 +12,7 @@ type NewTodoProps = {
 };
 
 const CreateTodoModal = (props: NewTodoProps) => {
-    const { open, handleClose, onActionFinish = () => {} } = props;
+    const { open, handleClose, onActionFinish = () => { } } = props;
     const [input, setInput] = useState<string>('');
 
     const supabase = useSupabase();
